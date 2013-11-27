@@ -1,1 +1,37 @@
 =Monsters=
+In Text Quest there are many monsters and mythical creatures the player will encounter during their travels. Due to the current story line development most of combat between monsters will involve the player killing either a Goblin or an Orc.
+
+==Determining Monster Stats==
+*Monster stats are determined by the player's stats, the monster is always a little bit more powerful than the player in terms of attack power. This is because the armor tiers are so good in the game the monsters wouldn't be able to give damage to the player without a little re-vamping.
+
+===Code for Monster Stat Determination===
+NOTE: These are just a few methods in the Monster class.
+
+{{{
+public static int generateRandomLevel(int PlayerLevel){
+		MonsterLevel = new Random().nextInt(PlayerLevel) + 1;
+		return MonsterLevel;
+		
+	}
+	public static int getMonsterAttack(int MonsterLevel, int chance){
+		MonsterAttack = chance * MonsterLevel;
+		return MonsterAttack;
+		
+	}
+	public static int getMonsterDefense(int MonsterLevel, int chance ){
+		MonsterDefense = chance * MonsterLevel;
+		return MonsterDefense;
+	}
+	public static int MonsterLevel = generateRandomLevel(PlayerLevel);
+	public static int MonsterAttack = getMonsterAttack(MonsterLevel, Attackchance );
+	public static int MonsterDefense = getMonsterDefense(MonsterLevel, Defensechance);
+}}}
+<hr />
+==Lore==
+In Text Quest the world is scared by war. In the process of war many of the nation's in Text Quest have allied with one another. The alliances are as such.
+
+*The Elves and Humans form the "Halken Alliance"*
+*The Orcs and Goblins are allied.*
+*The Demons and Dragons are allied and they are called (Demon Riders)*
+*The Angels are allied with no one*
+*The Skeletal/Undead are allied with no one*
