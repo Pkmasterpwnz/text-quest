@@ -31,7 +31,11 @@ public static int generateRandomLevel(int PlayerLevel){
 In Text Quest the world is scared by war. In the process of war many of the nation's in Text Quest have allied with one another. The alliances are as such.
 
 *The Elves and Humans form the "Halken Alliance"*
+<br />
 *The Orcs and Goblins are allied.*
+<br />
 *The Demons and Dragons are allied and they are called (Demon Riders)*
+<br />
 *The Angels are allied with no one*
+<br />
 *The Skeletal/Undead are allied with no one*
