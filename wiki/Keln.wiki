@@ -19,3 +19,8 @@ The Dragon Amulet auto-matically collects Dragon Souls. The Table below shows ho
 ||10||||Dragonnite Sword||
 ||20||||Dragonnite 2h Sword||
 ||30||||Dragonnite Plate||
+
+<hr />
+
+==Destroying Dragonnite Armor==
+Simply discarding the Dragonnite Armor will destroy it, this is because Dragonnite Armor's enchantment can only function properly when the user accepts ownership of the gear, if the user rejects ownership the gear literally falls apart and returns to its primary form, Dragon Souls, these souls dissipate into the air and go to another plane of existence.
