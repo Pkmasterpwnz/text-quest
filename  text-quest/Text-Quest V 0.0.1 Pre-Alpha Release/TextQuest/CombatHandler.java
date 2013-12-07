@@ -8,7 +8,7 @@ public class CombatHandler {
 	//this will be implemented in a later build 
 	//when I decide to Revamp Combat.
 	
-	public static void combat(String state, int attack, int defense, int hitpoints, int monsterhitpoints,  int monsterattack,  int monsterdefense){
+	/*public static void combat(String state, int attack, int defense, int hitpoints, int monsterhitpoints,  int monsterattack,  int monsterdefense){
 		if (state.equals("attacking")){
 			int damage = attack;
 			damage -= monsterdefense;
@@ -30,13 +30,13 @@ public class CombatHandler {
 					
 				}
 				
-			}else{
-				out.println("In order to attack you must either use the attack command or the defend command.");
-				out.println("Type help for a list of commands.");
-				Idle.main();
+			}//else{
+				//out.println("In order to attack you must either use the attack command or the defend command.");
+				//out.println("Type help for a list of commands.");
+				//Idle.main();
 				
-			}
-	}
+			//}
+	}*/
 	public static void encounter(int monsterId, String monsterName){
 		if (monsterId == 0){
 			monsterId = new Random().nextInt(9);
@@ -56,14 +56,17 @@ public class CombatHandler {
 	
 	public static void main(){
 		//getting commands for battle.
-		while (Monster.hp > 0 || Player.state!=("running") || Player.hp > 0){ //conditionals for battle.
+		while (Monster.hp <= 0 /*|| Player.state!=("running") */|| Player.hp > 0){ //conditionals for battle.
 			Idle.main();
 			//CommandHandler.getCommand(CommandHandler.CommandsAvailable);
-			CommandHandler.translateCommand(Player.RecentCommand, Player.RecentCommandId);
+			CommandHandler.translateCommand(Player.RecentCommand);
 			CommandHandler.processCommand(Player.RecentCommandId);
-			combat(Player.state, Player.attack, Player.defense, Player.hp, Monster.hp, Monster.MonsterAttack, Monster.MonsterDefense);
-			Player.state = "defending";
-			combat(Player.state, Player.attack, Player.defense, Player.hp, Monster.hp, Monster.MonsterAttack, Monster.MonsterDefense);
+			//combat(Player.state, Player.attack, Player.defense, Player.hp, Monster.hp, Monster.MonsterAttack, Monster.MonsterDefense);
+			//Player.state = "defending";
+			//combat(Player.state, Player.attack, Player.defense, Player.hp, Monster.hp, Monster.MonsterAttack, Monster.MonsterDefense);
+			Commands.attack();
+			Commands.defend();
+			break;
 		}
 		
 		

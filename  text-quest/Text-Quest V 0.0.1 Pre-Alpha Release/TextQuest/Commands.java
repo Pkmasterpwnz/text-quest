@@ -28,11 +28,26 @@ public class Commands {
 		CityHandler.getcityAvailable(travel_location, Player.currentCity);
 		out.println("Welcome to " +CityHandler.cityName);
 	}
-	public static void attack(String PlayerState){
-		PlayerState = "attacking";
+	public static void attack(){
+		//Player.state = "attacking";
+		int damage = Player.attack;
+		damage -= Monster.MonsterDefense;
+		Monster.hp -= damage;
+		out.println("You have dealt " +damage+ " points of damage");
+		out.println("Enemy Hp: " +Monster.hp);
 	}
-	public static void defend(String PlayerState){
-		PlayerState = "defending";
+	public static void defend(){
+		int damage = Monster.MonsterAttack;
+		damage -= Player.defense;
+		Player.hp -= damage;
+		out.println("You have taken " +damage+ " points of damage");
+		out.println("HP: " +Player.hp);
+		if (Player.hp <= 0){
+			out.println("You have died.");
+			Idle.main();
+			//Player.currentCity = 1;
+			
+		}
 	}
 	public static void run(String PlayerState){
 		PlayerState = "running";

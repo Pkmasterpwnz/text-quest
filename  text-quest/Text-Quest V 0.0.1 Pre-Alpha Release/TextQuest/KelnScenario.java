@@ -11,7 +11,7 @@ import java.util.Scanner;
  */
 public class KelnScenario {//Need to implement feature for collecting dragon souls and need to make amulet function.
 	public static Scanner mainScanner = new Scanner (System.in);
-	public static int stage = 1;
+	public static int stage = 3;
 	public static int response = 0;
 	public static void intro(){
 		out.println("I don't know how you found us, but we are not interested in small talk.");
