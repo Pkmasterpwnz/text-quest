@@ -1,5 +1,5 @@
 package TextQuest;
-import static java.lang.System.out;
+//import static java.lang.System.out;
 
 import java.util.Scanner;
 /*
@@ -10,9 +10,9 @@ import java.util.Scanner;
  * Belongs to Joseph Swafford
  */
 
+@SuppressWarnings("unused")
 public class Game{
 	public static double version = 0.01; //for reference whenever I work with other versions of TQ.
-	@SuppressWarnings("unused")
 	private static Scanner create;
 	public static Scanner mainScanner;
 	
@@ -51,7 +51,7 @@ public class Game{
 		if (response.equals("load")){
 			authenticate(Player.security, Player.username, Player.password);
 		}*/
-		out.println("Welcome to Text Quest V 0.0.1");
+		//out.println("Welcome to Text Quest V 0.0.1");
 		Trialbuild.main();
 	}
 }

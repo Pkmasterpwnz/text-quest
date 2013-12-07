@@ -15,15 +15,15 @@ public class Player {
 	public static int maxLevel = 20;
 	public static int xp = 0;
 	public static int xpToLevelUp = 100;
-	public static int attack = 5;
-	public static int defense = 1;
+	public static int attack = 10;
+	public static int defense = 5;
 	public static int equippedWeapon;
 	public static int equippedArmour;
 	public static int equippedAmulet;
-	static String username;
-	static String password;
+	public static String username;
+	public static String password;
 	public static boolean security;
-	public static String state = "idle";
+	//public static String state = ""; not working, cannot change state from attack/defend commands. Have another Idea.
 	public static String RecentCommand = "";
 	public static int RecentCommandId;
 	public static int currentCity;
