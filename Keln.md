@@ -1,0 +1,43 @@
+# The Keln #
+The Keln is a renowned family in Text Quest, they are famous for creating Dragonnite armor. Many myths have surrounded the mystery of the creation of Dragonnite.
+
+
+&lt;hr /&gt;
+
+
+## Dragonnite Armor ##
+Dragonnite Armor was created by the Keln family, the creation was never traced to a single member of the Keln family and as such is credited to each member of the Keln family. The armor was forged using a magic spell that the Keln created and Dragon Souls.
+
+
+&lt;hr /&gt;
+
+
+## Player Involvement ##
+The player gets involved in a side quest-line for the Keln family via a random Scenario whilest entering the capital city of Taften. (Refer to the Scenario System for more information on Random Scenario's). After meeting the Keln the player winds up getting close enough to the family to learn their secret spell and a method for capturing Dragon Souls. The Keln family explains that Dragonnite Armor has a special enchantment and cannot be given to another person other than the person who crafted the armor. (In the game you cannot get ride of the armor unless you destroy it.)
+
+
+&lt;hr /&gt;
+
+
+## Creating Dragonnite Armor ##
+To create Dragonnite Armor you need to have a special artifact (The Dragon Amulet -- Which is not referenced in the code with an Item ID). The spell the Keln family teaches is
+```
+Un'd Estean Belgath
+```
+The Dragon Amulet auto-matically collects Dragon Souls. The Table below shows how many Dragon Souls you need per Dragonnite item.
+
+|Souls|Item| |
+|:----|:---|:|
+|5    |Dragonnite Dagger| |
+|10   |Dragonnite Sword| |
+|20   |Dragonnite 2h Sword| |
+|30   |Dragonnite Plate| |
+
+
+
+&lt;hr /&gt;
+
+
+
+## Destroying Dragonnite Armor ##
+Simply discarding the Dragonnite Armor will destroy it, this is because Dragonnite Armor's enchantment can only function properly when the user accepts ownership of the gear, if the user rejects ownership the gear literally falls apart and returns to its primary form, Dragon Souls, these souls dissipate into the air and go to another plane of existence.
